@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: semx-api
+    env: dotnet
+    buildCommand: dotnet build
+    startCommand: dotnet SocialMediaApi.dll
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
